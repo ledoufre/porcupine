@@ -85,8 +85,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-      with:
-        submodules: recursive
+    - run: git submodule update --init --recursive
+      # with:
+      #   submodules: recursive
 
     - name: Pre-build dependencies
       run: python3 -m pip install --upgrade pip
