@@ -43,7 +43,7 @@ defaults:
   run:
     working-directory: binding/python
 
-# jobs:
+jobs:
 #   build-github-hosted:
 #     runs-on: ${{ matrix.os }}
 
