@@ -81,7 +81,7 @@ jobs:
 
     strategy:
       matrix:
-        machine: [rpi3]
+        machine: [rpi4]
 
     steps:
     - uses: actions/checkout@v2
