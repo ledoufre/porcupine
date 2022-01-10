@@ -10,3 +10,7 @@ build
 dist
 pvporcupine.egg-info
 demo/c/cmake-build-debug/
+
+# SPM
+Package.resolved
+.build
