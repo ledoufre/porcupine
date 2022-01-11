@@ -22,7 +22,8 @@ let package = Package(
             name: "porcupine",
             dependencies: ["ios-voice-processor", "PvPorcupine"],
             path: "binding/ios",
-            exclude: ["Porcupine-iOS.podspec", "README.md"]),
+            exclude: ["Porcupine-iOS.podspec", "README.md"],
+            resources: [.process("../../resources"), .process("../../lib/common/porcupine_params.pv")]),
         .binaryTarget(
             name: "PvPorcupine",
             path: "lib/ios/PvPorcupine.xcframework"
